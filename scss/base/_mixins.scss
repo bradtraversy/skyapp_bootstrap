@@ -1,0 +1,38 @@
+
+/* Mixins */
+
+@mixin border-radius($radius){
+	-moz-border-radius:$radius;
+	-webkit-border-radius:$radius;
+	border-radius:$radius;
+}	
+
+@mixin add-border($size, $color, $position){
+	@if $position == 'all'{
+		border:$size solid $color;
+	} @else if $position == 'top'{
+		border-top:$size solid $color;
+	} @else if $position == 'bottom'{
+		border-bottom:$size solid $color;
+	} @else if $position == 'right'{
+		border-right:$size solid $color;
+	} @else if $position == 'left'{
+		border-left:$size solid $color;
+	} @else if $position == 'top-bottom'{
+		border-top:$size solid $color;
+		border-bottom:$size solid $color;
+	} @else if $position == 'right-left'{
+		border-left:$size solid $color;
+		border-right:$size solid $color;
+	}
+}
+
+@mixin add-background($color){
+	background:$color;
+	@if $color == $light-color{
+		color:#666666;
+	} @else {
+		color:#ffffff;
+	}
+}	
+

@@ -1,0 +1,598 @@
+/*
+	SkyApp Bootstrap Sass Theme
+	Author: Brad Traversy
+	Version: 0.0.1
+*/
+/* BASE - Base styles, variables, mixins, etc */
+/* Font Colors */
+/* Background Colors */
+/* Showcase Area */
+/* Mixins */
+/* line 1, ../scss/base/_normalize.scss */
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+/* line 5, ../scss/base/_normalize.scss */
+.page-header {
+  margin-top: 30px;
+}
+
+/* line 9, ../scss/base/_normalize.scss */
+.no-pad-top {
+  padding-top: 0;
+}
+
+/* line 13, ../scss/base/_normalize.scss */
+.extra-pad {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 18, ../scss/base/_normalize.scss */
+.top-inner {
+  padding: 90px 0 30px 0;
+}
+
+/* Image Sizes */
+/* line 23, ../scss/base/_normalize.scss */
+.img-xsm {
+  width: 100px;
+}
+
+/* line 24, ../scss/base/_normalize.scss */
+.img-sm {
+  width: 200px;
+}
+
+/* line 25, ../scss/base/_normalize.scss */
+.img-lg {
+  width: 400px;
+}
+
+/* line 26, ../scss/base/_normalize.scss */
+.img-xlg {
+  width: 700px;
+}
+
+/* line 28, ../scss/base/_normalize.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 1, ../scss/base/_base.scss */
+body {
+  font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+}
+
+/* line 8, ../scss/base/_base.scss */
+a {
+  color: #00aff0;
+}
+
+/* line 12, ../scss/base/_base.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 16, ../scss/base/_base.scss */
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* line 20, ../scss/base/_base.scss */
+img.device {
+  width: 100%;
+}
+
+/* line 24, ../scss/base/_base.scss */
+img.device-small {
+  width: 70%;
+  margin-bottom: -40px;
+}
+
+/* MODULES - Individual site components */
+/* Lists */
+/* line 4, ../scss/modules/_typography.scss */
+.list, .list-feature {
+  margin-bottom: 30px;
+}
+
+/* line 8, ../scss/modules/_typography.scss */
+.list-feature {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+/* line 14, ../scss/modules/_typography.scss */
+.list-feature li {
+  line-height: 3.6em;
+  border-bottom: 1px solid #cccccc;
+  overflow: auto;
+}
+/* line 20, ../scss/modules/_typography.scss */
+.list-feature li:last-child {
+  border: 0;
+}
+/* line 24, ../scss/modules/_typography.scss */
+.list-feature span {
+  vertical-align: top;
+  padding-top: 9px;
+  font-size: 120%;
+}
+/* line 30, ../scss/modules/_typography.scss */
+.list-feature i {
+  margin-top: -9px;
+  margin-right: 5px;
+}
+
+/* line 36, ../scss/modules/_typography.scss */
+.list-comments {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 41, ../scss/modules/_typography.scss */
+.list-comments li {
+  padding: 10px 0 5px 0;
+  border-bottom: 1px solid #cccccc;
+  overflow: auto !important;
+}
+
+/* line 47, ../scss/modules/_typography.scss */
+.list-comments li:last-child {
+  border: 0;
+}
+
+/* line 51, ../scss/modules/_typography.scss */
+.list-comments img {
+  width: 100px;
+}
+
+/* Icons */
+/* line 58, ../scss/modules/_typography.scss */
+.fa-2 {
+  font-size: 18px;
+}
+
+/* line 61, ../scss/modules/_typography.scss */
+.fa-3 {
+  font-size: 24px;
+}
+
+/* line 64, ../scss/modules/_typography.scss */
+.fa-4 {
+  font-size: 27px;
+}
+
+/* line 67, ../scss/modules/_typography.scss */
+.fa-5 {
+  font-size: 35px;
+}
+
+/* line 70, ../scss/modules/_typography.scss */
+.fa-6 {
+  font-size: 40px;
+}
+
+/* line 74, ../scss/modules/_typography.scss */
+.fa-primary {
+  color: #00aff0;
+}
+
+/* line 78, ../scss/modules/_typography.scss */
+.fa-border {
+  border: 1px solid #00aff0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 13px 15px;
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+/* Headings */
+/* line 89, ../scss/modules/_typography.scss */
+.heading-primary, .heading-primary-a {
+  color: #00aff0;
+}
+
+/* line 93, ../scss/modules/_typography.scss */
+.heading-primary-a {
+  border-bottom: 2px solid #00aff0;
+}
+
+/* line 98, ../scss/modules/_typography.scss */
+.heading-secondary, .heading-secondary-a {
+  color: #7fba00;
+}
+
+/* line 102, ../scss/modules/_typography.scss */
+.heading-secondary-a {
+  border-bottom: 2px solid #7fba00;
+}
+
+/* line 107, ../scss/modules/_typography.scss */
+.heading-light, .heading-light-a {
+  color: #e4eef2;
+}
+
+/* line 111, ../scss/modules/_typography.scss */
+.heading-light-a {
+  border-bottom: 2px solid #e4eef2;
+}
+
+/* line 116, ../scss/modules/_typography.scss */
+.heading-dark, .heading-dark-a {
+  color: #2b5464;
+}
+
+/* line 120, ../scss/modules/_typography.scss */
+.heading-dark-a {
+  border-bottom: 2px solid #2b5464;
+}
+
+/* Emphasis Text */
+/* line 127, ../scss/modules/_typography.scss */
+.em-primary {
+  color: #00aff0;
+}
+
+/* line 131, ../scss/modules/_typography.scss */
+.em-secondary {
+  color: #7fba00;
+}
+
+/* line 135, ../scss/modules/_typography.scss */
+.em-dark {
+  color: #2b5464;
+}
+
+/* line 139, ../scss/modules/_typography.scss */
+.em-light {
+  color: #e4eef2;
+}
+
+/* Blocks */
+/* line 4, ../scss/modules/_blocks.scss */
+.block, .block-primary, .block-secondary, .block-light, .block-dark {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+/* line 8, ../scss/modules/_blocks.scss */
+.block h3, .block-primary h3, .block-secondary h3, .block-light h3, .block-dark h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 13, ../scss/modules/_blocks.scss */
+.block iframe, .block-primary iframe, .block-secondary iframe, .block-light iframe, .block-dark iframe {
+  width: 100%;
+}
+
+/* line 18, ../scss/modules/_blocks.scss */
+.block-primary {
+  background: #00aff0;
+  color: #ffffff;
+}
+
+/* line 23, ../scss/modules/_blocks.scss */
+.block-secondary {
+  background: #7fba00;
+  color: #ffffff;
+}
+
+/* line 28, ../scss/modules/_blocks.scss */
+.block-light {
+  background: #e4eef2;
+  color: #666666;
+}
+
+/* line 33, ../scss/modules/_blocks.scss */
+.block-dark {
+  background: #2b5464;
+  color: #ffffff;
+}
+
+/* line 38, ../scss/modules/_blocks.scss */
+.block-center {
+  text-align: center !important;
+}
+
+/* line 42, ../scss/modules/_blocks.scss */
+.block-image img {
+  width: 100%;
+}
+
+/* line 46, ../scss/modules/_blocks.scss */
+.block-border {
+  border: 1px solid #cccccc;
+}
+
+/* line 51, ../scss/modules/_blocks.scss */
+.block-primary-head h3 {
+  padding: 15px 5px 15px 10px;
+  background: #00aff0;
+  color: #ffffff;
+  margin: 0;
+  font-size: 18px;
+}
+/* line 58, ../scss/modules/_blocks.scss */
+.block-primary-head .block-content {
+  border: 1px solid #00aff0;
+  padding: 10px;
+}
+
+/* line 65, ../scss/modules/_blocks.scss */
+.block-icon h3 {
+  padding: 0;
+  margin: 0;
+}
+/* line 70, ../scss/modules/_blocks.scss */
+.block-icon .icon {
+  float: left;
+  width: 20%;
+  margin-top: 10px;
+}
+/* line 76, ../scss/modules/_blocks.scss */
+.block-icon .icon-content {
+  float: left;
+  width: 70%;
+}
+
+/* Buttons */
+/* line 3, ../scss/modules/_buttons.scss */
+.btn-primary {
+  background: #00aff0;
+  color: #ffffff;
+  border: 2px solid white;
+}
+
+/* line 8, ../scss/modules/_buttons.scss */
+.btn-primary:hover {
+  background: #008abd;
+  border: 2px solid white;
+}
+
+/* Sections */
+/* line 3, ../scss/modules/_sections.scss */
+section {
+  padding: 30px 0;
+}
+
+/* line 7, ../scss/modules/_sections.scss */
+.section-showcase {
+  height: 400px;
+  background: url("../img/showcase.jpg") no-repeat top center;
+}
+/* line 11, ../scss/modules/_sections.scss */
+.section-showcase .showcase-content {
+  padding: 110px 15px;
+  text-align: center;
+}
+/* line 16, ../scss/modules/_sections.scss */
+.section-showcase h1 {
+  color: #00aff0;
+}
+
+/* line 21, ../scss/modules/_sections.scss */
+.section-primary, .section-primary-a, .section-primary-b {
+  background: #00aff0;
+  color: #ffffff;
+}
+
+/* line 25, ../scss/modules/_sections.scss */
+.section-primary-a {
+  border-top: 4px solid #7fba00;
+}
+
+/* line 30, ../scss/modules/_sections.scss */
+.section-primary-b {
+  border-bottom: 4px solid #7fba00;
+}
+
+/* line 35, ../scss/modules/_sections.scss */
+.section-secondary {
+  background: #7fba00;
+  color: #ffffff;
+}
+
+/* line 38, ../scss/modules/_sections.scss */
+.section-light {
+  background: #e4eef2;
+  color: #666666;
+}
+
+/* line 42, ../scss/modules/_sections.scss */
+.section-dark {
+  background: #2b5464;
+  color: #ffffff;
+}
+
+/* Carousel */
+/* line 3, ../scss/modules/_components.scss */
+.carousel {
+  margin-bottom: 20px;
+}
+
+/* line 7, ../scss/modules/_components.scss */
+.carousel img {
+  padding: 3px;
+  border: 1px solid #cccccc;
+}
+
+/* Tabs */
+/* line 14, ../scss/modules/_components.scss */
+.tab-pane {
+  padding: 20px 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* line 20, ../scss/modules/_components.scss */
+.tab-primary .tab-pane, .tab-primary .nav-tabs > li.active > a, .tab-primary .nav-tabs > li.active > a:hover, .tab-primary .nav-tabs > li.active > a:focus {
+  background: #00aff0;
+  color: #ffffff;
+}
+
+/* line 24, ../scss/modules/_components.scss */
+.tab-secondary .tab-pane, .tab-secondary .nav-tabs > li.active > a, .tab-secondary .nav-tabs > li.active > a:hover, .tab-primary .nav-tabs > li.active > a:focus {
+  background: #7fba00;
+  color: #ffffff;
+}
+
+/* line 28, ../scss/modules/_components.scss */
+.tab-dark .tab-pane, .tab-dark.nav-tabs > li.active > a, .tab-dark .nav-tabs > li.active > a:hover, .tab-primary .nav-tabs > li.active > a:focus {
+  background: #2b5464;
+  color: #ffffff;
+}
+
+/* line 32, ../scss/modules/_components.scss */
+.tab-light .tab-pane, .tab-light .nav-tabs > li.active > a, .tab-light .nav-tabs > li.active > a:hover, .tab-primary .nav-tabs > li.active > a:focus {
+  background: #e4eef2;
+  color: #666666;
+}
+
+/* Searchbox */
+/* line 3, ../scss/modules/_forms.scss */
+.search {
+  width: 100%;
+}
+/* line 6, ../scss/modules/_forms.scss */
+.search h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 11, ../scss/modules/_forms.scss */
+.search input[type="search"] {
+  border: 0;
+  height: 50px;
+  width: 80%;
+  border: 2px solid #00aff0;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+/* line 21, ../scss/modules/_forms.scss */
+.search button {
+  border: 0;
+  background: none;
+  padding: 0;
+  vertical-align: top;
+  margin-left: -4px;
+}
+
+/* LAYOUTS - Page layout styles */
+/* Navbar */
+/* line 4, ../scss/layouts/_nav.scss */
+.navbar {
+  width: 90%;
+  margin: auto;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-color: #e7e7e7;
+  min-height: 60px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+/* line 13, ../scss/layouts/_nav.scss */
+.navbar a {
+  color: #00aff0 !important;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  padding-bottom: 24px !important;
+  padding-top: 20px !important;
+}
+
+/* line 23, ../scss/layouts/_nav.scss */
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background: #00aff0 !important;
+  color: #fff !important;
+}
+
+/* Footer */
+/* line 3, ../scss/layouts/_footer.scss */
+.footer-main {
+  background: #2b5464;
+  color: #ffffff;
+  border-top: 5px solid #7fba00;
+  min-height: 200px;
+  padding: 30px 0;
+  z-index: 100;
+}
+/* line 10, ../scss/layouts/_footer.scss */
+.footer-main a {
+  color: #ffffff;
+}
+/* line 14, ../scss/layouts/_footer.scss */
+.footer-main ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 19, ../scss/layouts/_footer.scss */
+.footer-main li {
+  line-height: 1.8em;
+  list-style: none;
+}
+
+/* Blog */
+/* line 3, ../scss/layouts/_blog.scss */
+.blog-post {
+  border-top: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  padding: 15px;
+}
+/* line 8, ../scss/layouts/_blog.scss */
+.blog-post h2.page-header {
+  margin-top: 5px !important;
+}
+
+/* line 13, ../scss/layouts/_blog.scss */
+.blog-featured {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 18, ../scss/layouts/_blog.scss */
+.post-meta {
+  background: #f3f3f3;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #cccccc;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  /* line 2, ../scss/layouts/_mobile.scss */
+  .search {
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* line 7, ../scss/layouts/_mobile.scss */
+  .device {
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+
+  /* line 12, ../scss/layouts/_mobile.scss */
+  .device-small {
+    margin-bottom: 20px !important;
+  }
+
+  /* line 17, ../scss/layouts/_mobile.scss */
+  .footer-main ul {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* line 22, ../scss/layouts/_mobile.scss */
+  .footer-main h4 {
+    text-align: center;
+  }
+}
